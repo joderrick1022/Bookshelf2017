@@ -22,3 +22,33 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+
+/*.thumbnail .caption {
+    padding: 9px;
+    color: #333333;
+
+        background-image: url('wolf.jpg');    // this is for testing
+    background-size:cover;
+    background-repeat:no-repeat;
+
+}*/
+
+.thumbnail {
+
+     background-image: url('wolf.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+
+
+    display: inline-block;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    padding: 4px;
+    line-height: 1.428571429;
+    /*background-color: #ffffff;*/
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}

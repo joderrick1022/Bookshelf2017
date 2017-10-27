@@ -1,0 +1,48 @@
+﻿@model BookSelf2017.Models.Book
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Book</h4>
+    <hr />
+    
+
+
+        <hr />
+
+
+        <h1 style="font-weight:200">
+            @Html.DisplayNameFor(model => model.Title)
+        </h1>
+
+        <p>
+            @Html.DisplayFor(model => model.Title)
+        </p>
+        <h3>
+            @Html.DisplayNameFor(model => model.Catagory.Name):@Html.DisplayFor(model => model.Catagory.Name)
+        </h3>
+
+       
+        
+        <h3>
+            @Html.DisplayNameFor(model => model.PublishedDate):@Html.DisplayFor(model => model.PublishedDate)
+        </h3>
+        <p>
+            @Html.DisplayFor(model => model.Description)
+        </p>
+
+        <p>
+            @Html.DisplayNameFor(model => model.ISBN):@Html.DisplayFor(model => model.ISBN)
+        </p>
+
+        
+
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
